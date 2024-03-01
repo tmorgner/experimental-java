@@ -3,5 +3,8 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":concurrency-tools"))
+    api(project(":concurrency-tools-api"))
+    // ParallelMa does not yet have an equivalent in the API project
+    implementation(project(":concurrency-tools-impl"))
 }
+
