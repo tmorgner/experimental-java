@@ -1,0 +1,11 @@
+[versions]
+
+[libraries]
+junit5-jupiter="org.junit.jupiter:junit-jupiter:5.10.0"
+junit4-core="junit:junit:4.13"
+
+[bundles]
+junit4=[ "junit4-core"]
+junit5=[ "junit5-jupiter", "junit4-core"]
+
+[plugins]
