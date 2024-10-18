@@ -1,3 +1,5 @@
+import experimental.build.plugin.AutoInclude
+
 pluginManagement {
     includeBuild("build-support")
 }
@@ -19,6 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "experiments"
 
-include("concurrency-tools-api")
-include("concurrency-tools-impl")
-include("concurrency-tools-sample")
+AutoInclude.getInstance().enabled = true
